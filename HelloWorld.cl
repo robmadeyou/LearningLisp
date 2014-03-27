@@ -1,3 +1,2 @@
-(defun hello-world()
-	(format t "Hello, World!"))
-(hello-world)
+(defun hello-world(who)
+  (format t "Hello, boom shacka lacka ~A!~%l" who)
