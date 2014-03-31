@@ -11,7 +11,7 @@
 (add-record (make-cd "so much more" "Waay more" 5 t))
 
 (defun print-db()
-	(format t "~{~{~a:~10t~a~%~}~}" cd))
+	(format t "~{~{~a:~10t~a~%~}~}" *db*))
 
 (defun prompt-read (prompt)
 	(format *query-io* "~a: " prompt)
@@ -38,5 +38,5 @@
 (defun load-db(filename)
 	(with-open-file(in filename)
 		(with-standard-io-syntax
-			(setf *db*(read i)))))
+			(setf *db*(read in)))))
 
