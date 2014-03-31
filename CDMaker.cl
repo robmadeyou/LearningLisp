@@ -6,10 +6,6 @@
 (defun add-record(cd)
 	(push cd *db*))
 
-(add-record (make-cd "Rob" "Robb" 7 t))
-(add-record (make-cd "Even more" "Even even more" 1 t))
-(add-record (make-cd "so much more" "Waay more" 5 t))
-
 (defun print-db()
 	(format t "~{~{~a:~10t~a~%~}~}" *db*))
 
@@ -26,7 +22,8 @@
 		(y-or-n-p "Ripped [y/n]")))
 (defun add-cds()
 	(loop (add-record (prompt-for-cd))
-		(if(not(y-or-n-p "Another? [y/n]: "))(return))))
+		(save-db "here.txt")
+    (if(not(y-or-n-p "Another? [y/n]: "))(return))))
 
 (defun save-db(filename)
 	(with-open-file (out filename
@@ -40,3 +37,4 @@
 		(with-standard-io-syntax
 			(setf *db*(read in)))))
 
+(load-db "here.txt")

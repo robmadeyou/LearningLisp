@@ -1,2 +1,2 @@
 
-((:|TITLE| "so much more" :|ARTIST| "Waay more" :|RATING| 5. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "Even more" :|ARTIST| "Even even more" :|RATING| 1. :|RIPPED| |COMMON-LISP|::|T|) (:|TITLE| "Rob" :|ARTIST| "Robb" :|RATING| 7. :|RIPPED| |COMMON-LISP|::|T|)) 
+((:TITLE "heeeeeeeeeeeee" :ARTIST "hoooooooooooooooo" :RATING 10 :RIPPED NIL) (:TITLE "so much more" :ARTIST "Waay more" :RATING 5 :RIPPED T) (:TITLE "Even more" :ARTIST "Even even more" :RATING 1 :RIPPED T) (:TITLE "Rob" :ARTIST "Robb" :RATING 7 :RIPPED T)) 
